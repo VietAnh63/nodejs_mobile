@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "./node_modules/.bin/cross-env NODE_CONFIG_DIR=./src/config nodemon  --exec \"node -r dotenv/config ./src/bin/server dotenv_config_path=.env.dev\"",
-    "start": "./node_modules/.bin/cross-env NODE_CONFIG_DIR=./src/config nodemon  --exec \"node -r dotenv/config ./src/bin/server dotenv_config_path=.env\""
+    "start": "./node_modules/.bin/cross-env NODE_CONFIG_DIR=./src/config node -r dotenv/config ./src/bin/server dotenv_config_path=.env"
   },
   "keywords": [],
   "author": "",
