@@ -12,5 +12,13 @@ module.exports = {
                user: process.env.MAIL_USER,
                pass: process.env.MAIL_PASS
           }
-     }
+     },
+     redis: {
+     host: process.env.REDIS_HOST,
+     port: parseInt(process.env.REDIS_PORT),
+     password: process.env.REDIS_PASS,
+  },
+     mongo: {
+     uri: process.env.MONGO_DB_URI,
+  },
 }
